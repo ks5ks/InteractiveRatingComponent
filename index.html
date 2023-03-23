@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+      alt="icon used by browsers"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./style.css" rel="stylesheet" />
+
+    <script defer src="./script.js"></script>
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+
+  <body>
+    <div class="container">
+      <main>
+        <!-- Rating state start -->
+        <section class="rating">
+          <img
+            class="rating-img"
+            src="./images/icon-star.svg"
+            alt="Star icon"
+          />
+          <h1 class="header"><strong>How did we do?</strong></h1>
+          <p class="summary">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+
+          <form id="rating-form">
+            <div class="selections">
+              <label for="rate1">
+                <input
+                  type="radio"
+                  name="selection"
+                  class="selection"
+                  id="rate1"
+                  required="required"
+                  value="1"
+                />
+                <span>1</span>
+              </label>
+
+              <label for="rate2">
+                <input
+                  type="radio"
+                  name="selection"
+                  class="selection"
+                  id="rate2"
+                  required="required"
+                  value="2"
+                />
+                <span>2</span>
+              </label>
+
+              <label for="rate3">
+                <input
+                  type="radio"
+                  name="selection"
+                  class="selection"
+                  id="rate3"
+                  required="required"
+                  value="3"
+                />
+                <span>3</span>
+              </label>
+
+              <label for="rate4">
+                <input
+                  type="radio"
+                  name="selection"
+                  class="selection"
+                  id="rate4"
+                  required="required"
+                  value="4"
+                />
+                <span>4</span>
+              </label>
+
+              <label for="rate5">
+                <input
+                  type="radio"
+                  name="selection"
+                  class="selection"
+                  id="rate5"
+                  required="required"
+                  value="5"
+                />
+                <span>5</span>
+              </label>
+            </div>
+
+            <input type="submit" class="submit" value="SUBMIT" />
+          </form>
+
+          <!-- <button class="submit">Submit</button> -->
+        </section>
+        <!-- Rating state end -->
+
+        <!-- Thank you state start -->
+        <section class="thank-you hide">
+          <img
+            class="thank-you-img"
+            src="./images/illustration-thank-you.svg"
+            alt="Card, receipt, circle icon"
+          />
+          <p class="selected-value">
+            You selected <span class="value">4</span>
+            <!-- Add rating here -->
+            out of 5
+          </p>
+          <h1 class="header"><strong>Thank you!</strong></h1>
+          <p class="summary">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </section>
+        <!-- Thank you state end -->
+      </main>
+
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Kimball S Sumney</a>.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

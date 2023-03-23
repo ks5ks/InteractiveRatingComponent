@@ -1,0 +1,133 @@
+:root {
+  /*  */
+  --color-orange: hsl(25, 97%, 53%);
+
+  /* Background */
+  --background-very-dark-blue: hsl(216, 12%, 8%);
+  --background-medium-grey: hsl(216, 12%, 54%);
+
+  /* Text Colors */
+  --text-white: hsl(0, 0%, 100%);
+  --text-white-transparent: hsla(0, 0%, 100%, 90%);
+  --text-light-grey: hsl(217, 12%, 63%);
+  --text-dark-blue: hsl(213, 19%, 18%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light-grey);
+  font-family: Overpass;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  background-color: var(--background-very-dark-blue);
+}
+
+main {
+  width: 375px;
+  margin: 2rem;
+  padding: 7rem 3rem 10rem 3rem;
+}
+
+.rating-img {
+  padding: 3rem 0 2rem 1rem;
+}
+
+.header {
+  color: var(--text-white);
+  padding: 0 0 1rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.summary {
+  padding: 0 0 3rem 0;
+}
+
+.selections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 0 2rem 0;
+}
+
+.selection {
+  appearance: none;
+}
+
+.selection + span {
+  background-color: var(--text-dark-blue);
+  padding: 0.75rem;
+  border: none;
+  border-radius: 50%;
+  color: var(--text-light-grey);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.selection:hover + span {
+  background-color: var(--background-medium-grey);
+  color: var(--text-white);
+}
+
+.selection:checked + span {
+  background-color: var(--color-orange);
+  color: var(--text-white);
+}
+
+.submit {
+  background-color: var(--color-orange);
+  color: var(--text-white-transparent);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.thank-you-img {
+  width: 50%;
+  height: 50%;
+  margin: 2.25rem 0 2rem 0;
+}
+
+.selected-value {
+  color: var(--color-orange);
+  margin: 0 0 2rem 0;
+}
+
+.hide {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
