@@ -104,6 +104,11 @@ main {
   cursor: pointer;
 }
 
+.submit:hover {
+  background-color: var(--text-white);
+  color: var(--color-orange);
+}
+
 .thank-you {
   display: flex;
   flex-direction: column;
